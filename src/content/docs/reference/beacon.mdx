@@ -54,6 +54,41 @@ Beacon 有多种外观图案和功能，主要类型包括：
 基础 Beacon 和 Fireworks 不影响任何Portal属性，仅为视觉标记效果。
 </Aside>
 
+### 同一Portal上的共存规则
+
+不同类型的道具在同一个 Portal 上有着特定的共存和互斥规则：
+
+#### Beacon 与 Beacon 之间
+
+- **基础 Beacon** 与 **Battle Beacon** 遵循"Beacon 免疫"规则：同一时间，同一 Portal 只能存在**一个普通 Beacon 或 Battle Beacon**。
+- 当一个 Beacon（无论基础或战斗类型）正在生效时，无法在该 Portal 上部署另一个同类型的 Beacon。
+- 免疫时长等于 Beacon 的存在时长（基础 Beacon 为 4 小时，Battle Beacon 的获胜方信标为 1-4 小时不等）。
+
+#### Fireworks（烟花）的特殊性
+
+- **Fireworks 不受 Beacon 免疫影响**：即使 Portal 上已经存在基础 Beacon 或 Battle Beacon，仍然可以部署 Fireworks。
+- Fireworks 与其他 Beacon 可以**同时共存**在同一个 Portal 上。
+- 例如：一个正在显示基础 Beacon 的 Portal，仍可以额外部署一个阵营 Fireworks（持续 10 分钟）。
+
+#### Portal Fracker 的独立性
+
+- **Portal Fracker 是完全独立的功能性道具**，不受 Beacon 免疫规则影响。
+- Fracker 可以与任意类型的 Beacon（基础 Beacon、Battle Beacon、Fireworks）**同时共存**在同一个 Portal 上。
+- 部署 Fracker 不会影响已有的 Beacon，反之亦然。
+
+#### 共存情况汇总
+
+| Portal 上已有的道具 | 可以再部署基础 Beacon | 可以再部署 Battle Beacon | 可以再部署 Fireworks | 可以再部署 Fracker |
+| :--- | :---: | :---: | :---: | :---: |
+| **基础 Beacon** | ❌ | ❌ | ✅ | ✅ |
+| **Battle Beacon** | ❌ | ❌ | ✅ | ✅ |
+| **Fireworks** | ✅ | ✅ | ✅ | ✅ |
+| **Portal Fracker** | ✅ | ✅ | ✅ | ✅ |
+
+<Aside type="tip">
+**实际应用示例**：在大型活动中，你可以在同一个 Portal 上同时部署 Portal Fracker（提高产出）+ 基础 Beacon（标记位置）+ Fireworks（增加视觉效果），三者可以完美共存而不互相影响。
+</Aside>
+
 ### Portal Fracker
 
 [Portal Fracker（薯条）](/INGRESS-GUIDE/reference/fracker/) 虽然在背包中与 Beacon 放在一起，且部署方式相似，但它是**完全不同的功能性道具**。
